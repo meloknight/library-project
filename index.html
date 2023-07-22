@@ -9,6 +9,73 @@
     <title>Library Project</title>
 </head>
 <body>
-    
+    <nav>
+        <h1>The Jolly Knight's Library</h1>
+        <button id="new-book">New Book</button>
+    </nav>
+    <div id="nav-underline"></div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times</span>
+            <form id="book-form">
+                    <div class="label-input-container">
+                        <label for="book-title">Book Title: </label>
+                        <input type="text" id="book-title" placeholder="The Lord of the Things" name="book-title">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="book-author">Book Author: </label>
+                        <input type="text" id="book-author" placeholder="J.R.R. Tolkien" name="book-author">                        
+                    </div>
+                    <div class="label-input-container">
+                        <label for="book-pages">Number of pages in the book?: </label>
+                        <input type="number" id="book-pages" name="book-pages">                        
+                    </div>
+                    <div class="label-input-container">
+                        <label for="book-read">Has the book been read?: </label>
+                        <select name="book-read" id="book-read">
+                            <option value="yes">yes</option>
+                            <option value="no" selected>no</option>
+                        </select>                     
+                    </div>
+                    <div class="label-input-container">
+                        <label for="book-rating">Book Rating (out of 10): </label>
+                        <select name="book-rating" id="book-rating">
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>                        
+                    </div>
+                    <div class="reset-submit-container">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="body-container-container">
+        <div class="body-container">
+            <!-- <div class="book-card">
+                <h1>The Billy</h1>
+                <h2>Billy Billingtons</h2>
+                <h3>Pages: 123</h3>
+                <h3>Read?: yes</h3>
+                <h3>Rating (out of 10): 5</h3>
+            </div> -->
+        </div>
+    </div>
+
+
+
 </body>
 </html>
